@@ -1,0 +1,7 @@
+.moviesList {
+  display: flex;
+  flex-direction: column;
+  }
+.title {
+  color:black;
+}

@@ -1,0 +1,28 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  padding-top: 10px;
+}
+.item {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.img {
+  width: 185px;
+  height: auto;
+  border-radius: 4px;
+}
+.name {
+  padding: 10px;
+}
+.character {
+  padding: 10px;
+}
