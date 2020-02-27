@@ -11,7 +11,7 @@
   display: block;
   content: "";
   width: 0;
-  height: 2px;
+  height: 1px;
   background: #081c24;
 }
 .item:hover .link::after {
