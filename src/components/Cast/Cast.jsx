@@ -31,28 +31,26 @@ export default class Cast extends Component {
   render() {
     const { data } = this.state;
     return (
-      <>
-        <ul className={styles.list}>
-          {data.cast &&
-            data.cast.length > 0 &&
-            data.cast.map(actor => (
-              <li className={styles.item} key={actor.cast_id}>
-                {actor.profile_path && (
-                  <img
-                    src={`https://image.tmdb.org/t/p/w185${actor.profile_path}`}
-                    alt=""
-                  />
-                )}
-                <h5 className={styles.name}>{actor.name}</h5>
-                {actor.character.length > 0 && (
-                  <span className={styles.character}>
-                    Character:{actor.character}
-                  </span>
-                )}
-              </li>
-            ))}
-        </ul>
-      </>
+      <ul className={styles.list}>
+        {data.cast &&
+          data.cast.length !== 0 &&
+          data.cast.map(actor => (
+            <li className={styles.item} key={actor.cast_id}>
+              {actor.profile_path && (
+                <img
+                  src={`https://image.tmdb.org/t/p/w185${actor.profile_path}`}
+                  alt=""
+                />
+              )}
+              <h5 className={styles.name}>{actor.name}</h5>
+              {actor.character.length !== 0 && (
+                <span className={styles.character}>
+                  Character:{actor.character}
+                </span>
+              )}
+            </li>
+          ))}
+      </ul>
     );
   }
 }

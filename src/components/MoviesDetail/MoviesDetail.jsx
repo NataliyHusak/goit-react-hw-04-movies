@@ -72,7 +72,7 @@ export default class MovieDetailsPage extends Component {
                   <h4 className={styles.subTitle}>Genres</h4>
                   <ul className={styles.list}>
                     {data.genres &&
-                      data.genres.length > 0 &&
+                      data.genres.length !== 0 &&
                       data.genres.map(i => (
                         <li key={shortId.generate()}>{i.name}</li>
                       ))}

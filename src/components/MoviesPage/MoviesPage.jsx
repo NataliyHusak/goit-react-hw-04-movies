@@ -22,7 +22,6 @@ export default class MoviesPage extends Component {
   };
 
   state = {
-    input: "",
     data: {},
     notFound: false
   };

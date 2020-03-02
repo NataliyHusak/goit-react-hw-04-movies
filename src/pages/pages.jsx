@@ -1,12 +1,12 @@
 import { lazy } from "react";
 
-const HomePage = lazy(() =>
-  import("../components/HomePage/HomePage" /* webpackChunkName: "HomePage" */)
-);
 const MoviesPage = lazy(() =>
   import(
-    "../components/MoviesPage/MoviesPage" /* webpackChunkName: "MoviesPage" */
+    "../components/MoviesPage/MoviesPage" /* webpackChunkName: "MoviesPage"  */
   )
+);
+const HomePage = lazy(() =>
+  import("../components/HomePage/HomePage" /* webpackChunkName:"HomePage"  */)
 );
 const MovieDetailsPage = lazy(() =>
   import(
